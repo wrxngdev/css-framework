@@ -181,12 +181,6 @@ p, a, h1, h4, h5, h6 {
   background-color: #363636;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .flex-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -455,4 +449,32 @@ p, a, h1, h4, h5, h6 {
 .flex-shrink-5 {
   -ms-flex-negative: 5;
       flex-shrink: 5;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline;
+}
+
+.inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.none {
+  display: none;
 }

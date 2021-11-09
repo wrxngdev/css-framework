@@ -89,7 +89,6 @@ p, a, h1, h4, h5, h6 {
 .bg-color-danger { background-color: $dark; }
 
 // Flexbox
-.flex { display: flex; }
 .flex-row { flex-direction: row; }
 .flex-row-reverse { flex-direction: row-reverse; }
 .flex-column { flex-direction: column; }
@@ -145,3 +144,11 @@ p, a, h1, h4, h5, h6 {
 .flex-shrink-3 { flex-shrink: 3; }
 .flex-shrink-4 { flex-shrink: 4; }
 .flex-shrink-5 { flex-shrink: 5; }
+
+// Display
+.flex { display: flex; }
+.block { display: block;}
+.inline { display: inline }
+.inline-block { display: inline }
+.inline-flex { display: inline-flex }
+.none {display: none;}
