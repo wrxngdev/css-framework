@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p, a, h1, h4, h5, h6 {
+  font-size: 1rem;
+  color: #363636;
+}
+
+.size-1 {
+  font-size: 3rem;
+}
+
+.size-2 {
+  font-size: 2.5rem;
+}
+
+.size-3 {
+  font-size: 2rem;
+}
+
+.size-4 {
+  font-size: 1.5rem;
+}
+
+.size-5 {
+  font-size: 1.25rem;
+}
+
+.size-6 {
+  font-size: 1rem;
+}
+
+.size-7 {
+  font-size: 0.75rem;
+}
+
+.weight-light {
+  font-weight: 300;
+}
+
+.weight-normal {
+  font-weight: 400;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-semi-bold {
+  font-weight: 600;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  text-transform: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.align-centered {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-black {
+  color: #0a0a0a;
+}
+
+.color-light {
+  color: whitesmoke;
+}
+
+.color-dark {
+  color: #363636;
+}
+
+.color-primary {
+  color: #00d1b2;
+}
+
+.color-link {
+  color: #3273dc;
+}
+
+.color-info {
+  color: #209cee;
+}
+
+.color-success {
+  color: #48c774;
+}
+
+.color-warning {
+  color: #ffdd57;
+}
+
+.color-danger {
+  color: #363636;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.bg-color-black {
+  background-color: #0a0a0a;
+}
+
+.bg-color-light {
+  background-color: whitesmoke;
+}
+
+.bg-color-dark {
+  background-color: #363636;
+}
+
+.bg-color-primary {
+  background-color: #00d1b2;
+}
+
+.bg-color-link {
+  background-color: #3273dc;
+}
+
+.bg-color-info {
+  background-color: #209cee;
+}
+
+.bg-color-success {
+  background-color: #48c774;
+}
+
+.bg-color-warning {
+  background-color: #ffdd57;
+}
+
+.bg-color-danger {
+  background-color: #363636;
+}
