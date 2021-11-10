@@ -52,6 +52,18 @@ p, a, h1, h4, h5, h6 {
   resize: vertical;
 }
 
+.resize-none {
+  resize: none;
+}
+
+.resize-horizontal {
+  resize: horizontal;
+}
+
+.resize-vertical {
+  resize: vertical;
+}
+
 .checkbox {
   width: 1.5em;
   height: 1.5em;
