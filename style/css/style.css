@@ -262,78 +262,82 @@ p, a, h1, h4, h5, h6 {
 }
 
 .flex-align-flex-start {
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-.flex-align-flex-end {
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
-.flex-align-center {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.flex-align-space-between {
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-}
-
-.flex-align-space-around {
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
-.flex-align-start {
-  -ms-flex-line-pack: start;
-      align-content: start;
-}
-
-.flex-align-end {
-  -ms-flex-line-pack: end;
-      align-content: end;
-}
-
-.flex-align-strech {
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-}
-
-.flex-align-baseline {
-  -ms-flex-line-pack: baseline;
-      align-content: baseline;
-}
-
-.flex-items-strech {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.flex-items-flex-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.flex-items-flex-end {
+.flex-align-flex-end {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
 
-.flex-items-center {
+.flex-align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.flex-items-baseline {
+.flex-align-space-between {
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.flex-align-space-around {
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.flex-align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.flex-align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.flex-align-strech {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flex-align-baseline {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.flex-content-strech {
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.flex-content-flex-start {
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.flex-content-flex-end {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.flex-content-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-content-baseline {
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
 }
 
 .flex-align-self-auto {
@@ -643,7 +647,7 @@ p, a, h1, h4, h5, h6 {
   margin-left: 5em;
 }
 
-input, textarea {
+.input, .textarea {
   width: 100%;
   height: 4em;
   outline: none;
@@ -651,8 +655,98 @@ input, textarea {
   border-radius: 8px;
   padding-left: 0.75em;
   color: #4a4a4a;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.input:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.input::-ms-input-placeholder, .textarea::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.input::placeholder, .textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.textarea {
+  height: 12em;
+  padding-top: 1em;
+}
+
+.checkbox {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.button {
+  width: 100%;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #00d1b2;
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.button:hover {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.width-full {
+  width: 100%;
 }
 
 .width-half {
   width: 50%;
+}
+
+.width-1-quarter {
+  width: 25%;
+}
+
+.width-3-quarter {
+  width: 75%;
+}
+
+.width-1 {
+  width: 4em;
+}
+
+.width-2 {
+  width: 8em;
+}
+
+.width-3 {
+  width: 12em;
+}
+
+.width-4 {
+  width: 16em;
+}
+
+.width-5 {
+  width: 20em;
+}
+
+.width-6 {
+  width: 24em;
+}
+
+.width-7 {
+  width: 32em;
+}
+
+.height-full {
+  height: 100vh;
 }
