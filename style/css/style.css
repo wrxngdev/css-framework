@@ -676,8 +676,10 @@ p, a, h1, h4, h5, h6 {
 }
 
 .textarea {
+  min-height: 4em;
   height: 12em;
   padding-top: 1em;
+  resize: vertical;
 }
 
 .checkbox {
@@ -749,4 +751,60 @@ p, a, h1, h4, h5, h6 {
 
 .height-full {
   height: 100vh;
+}
+
+.height-1 {
+  height: 4em;
+}
+
+.height-2 {
+  height: 8em;
+}
+
+.height-3 {
+  height: 12em;
+}
+
+.height-4 {
+  height: 16em;
+}
+
+.height-5 {
+  height: 20em;
+}
+
+.height-6 {
+  height: 24em;
+}
+
+.height-7 {
+  height: 32em;
+}
+
+.min-height-1 {
+  min-height: 4em;
+}
+
+.min-height-2 {
+  min-height: 8em;
+}
+
+.min-height-3 {
+  min-height: 12em;
+}
+
+.min-height-4 {
+  min-height: 16em;
+}
+
+.min-height-5 {
+  min-height: 20em;
+}
+
+.min-height-6 {
+  min-height: 24em;
+}
+
+.min-height-7 {
+  min-height: 32em;
 }
