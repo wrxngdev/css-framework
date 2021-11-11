@@ -45,11 +45,45 @@ p, a, h1, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+.input.small, .textarea.small {
+  height: 2em;
+  font-size: 0.75rem;
+}
+
+.input.medium, .textarea.medium {
+  height: 4em;
+  font-size: 1rem;
+}
+
+.input.large, .textarea.large {
+  height: 4.25em;
+  font-size: 1.25rem;
+}
+
 .textarea {
   min-height: 4em;
   height: 12em;
   padding-top: 1em;
   resize: vertical;
+  font-size: 1rem;
+}
+
+.textarea.small {
+  min-height: 2em;
+  height: 6em;
+  font-size: 0.75rem;
+}
+
+.textarea.medium {
+  min-height: 4em;
+  height: 12em;
+  font-size: 1rem;
+}
+
+.textarea.large {
+  min-height: 6em;
+  height: 16em;
+  font-size: 1.25rem;
 }
 
 .resize-none {
@@ -85,6 +119,24 @@ p, a, h1, h4, h5, h6 {
 .button:hover {
   -webkit-filter: brightness(95%);
           filter: brightness(95%);
+}
+
+.button.small {
+  height: 2em;
+  font-size: 0.75rem;
+  border-radius: 8px;
+}
+
+.button.medium {
+  height: 4em;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+
+.button.large {
+  height: 4.25em;
+  font-size: 1.25rem;
+  border-radius: 16px;
 }
 
 .size-1 {

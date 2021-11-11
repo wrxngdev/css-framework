@@ -23,6 +23,7 @@ $black-ter: hsl(0, 0%, 14%);
 $black: hsl(0, 0%, 4%);
 
 // Border-Radius-Level
+$border-radius-level-0: 6px;
 $border-radius-level-1: 8px;
 $border-radius-level-2: 12px;
 $border-radius-level-3: 16px;
@@ -64,6 +65,21 @@ p, a, h1, h4, h5, h6 {
     &::placeholder {
         font-family: $font;
     }
+
+    &.small {
+        height: 2em;
+        font-size: 0.75rem;
+    }
+
+    &.medium {
+        height: 4em;
+        font-size: 1rem;
+    }
+
+    &.large {
+        height: 4.25em;
+        font-size: 1.25rem;
+    }
 }
 
 .textarea {
@@ -71,6 +87,25 @@ p, a, h1, h4, h5, h6 {
     height: 12em;
     padding-top: 1em;
     resize: vertical;
+    font-size: 1rem;
+
+    &.small {
+        min-height: 2em;
+        height: 6em;
+        font-size: 0.75rem;
+    }
+
+    &.medium {
+        min-height: 4em;
+        height: 12em;
+        font-size: 1rem;
+    }
+
+    &.large {
+        min-height: 6em;
+        height: 16em;
+        font-size: 1.25rem;
+    }
 }
 
 .resize-none {
@@ -105,6 +140,24 @@ p, a, h1, h4, h5, h6 {
 
     &:hover {
         filter: brightness(95%);
+    }
+
+    &.small {
+        height: 2em;
+        font-size: 0.75rem;
+        border-radius: $border-radius-level-1;
+    }
+
+    &.medium {
+        height: 4em;
+        font-size: 1rem;
+        border-radius: $border-radius-level-2;
+    }
+
+    &.large {
+        height: 4.25em;
+        font-size: 1.25rem;
+        border-radius: $border-radius-level-3;
     }
 }
 
