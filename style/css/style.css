@@ -45,19 +45,26 @@ p, a, h1, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+.input:focus, .textarea:focus {
+  border: 2px solid #00d1b2;
+}
+
 .input.small, .textarea.small {
   height: 2em;
   font-size: 0.75rem;
+  border-radius: 8px;
 }
 
 .input.medium, .textarea.medium {
   height: 4em;
   font-size: 1rem;
+  border-radius: 12px;
 }
 
 .input.large, .textarea.large {
   height: 4.25em;
   font-size: 1.25rem;
+  border-radius: 16px;
 }
 
 .textarea {
@@ -81,20 +88,20 @@ p, a, h1, h4, h5, h6 {
 }
 
 .textarea.large {
-  min-height: 6em;
+  min-height: 4.25em;
   height: 16em;
   font-size: 1.25rem;
 }
 
-.resize-none {
+.textarea.resize-none {
   resize: none;
 }
 
-.resize-horizontal {
+.textarea.resize-horizontal {
   resize: horizontal;
 }
 
-.resize-vertical {
+.textarea.resize-vertical {
   resize: vertical;
 }
 
@@ -116,7 +123,7 @@ p, a, h1, h4, h5, h6 {
   transition: all 200ms;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   -webkit-filter: brightness(95%);
           filter: brightness(95%);
 }
@@ -955,6 +962,10 @@ p, a, h1, h4, h5, h6 {
 
 .min-height-7 {
   min-height: 32em;
+}
+
+.border-radius-none {
+  border-radius: 0;
 }
 
 .border-radius-1 {

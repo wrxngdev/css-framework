@@ -23,7 +23,7 @@ $black-ter: hsl(0, 0%, 14%);
 $black: hsl(0, 0%, 4%);
 
 // Border-Radius-Level
-$border-radius-level-0: 6px;
+$border-radius-none: 0;
 $border-radius-level-1: 8px;
 $border-radius-level-2: 12px;
 $border-radius-level-3: 16px;
@@ -62,23 +62,32 @@ p, a, h1, h4, h5, h6 {
     font-size: 1rem;
     font-family: $font;
 
+    // Pseudo Classes
     &::placeholder {
         font-family: $font;
     }
 
+    &:focus {
+        border: 2px solid $primary;
+    }
+
+    // Element sizes
     &.small {
         height: 2em;
         font-size: 0.75rem;
+        border-radius: $border-radius-level-1;
     }
 
     &.medium {
         height: 4em;
         font-size: 1rem;
+        border-radius: $border-radius-level-2;
     }
 
     &.large {
         height: 4.25em;
         font-size: 1.25rem;
+        border-radius: $border-radius-level-3;
     }
 }
 
@@ -89,6 +98,7 @@ p, a, h1, h4, h5, h6 {
     resize: vertical;
     font-size: 1rem;
 
+    // Element sizes
     &.small {
         min-height: 2em;
         height: 6em;
@@ -102,22 +112,23 @@ p, a, h1, h4, h5, h6 {
     }
 
     &.large {
-        min-height: 6em;
+        min-height: 4.25em;
         height: 16em;
         font-size: 1.25rem;
     }
-}
 
-.resize-none {
-    resize: none;
-}
-
-.resize-horizontal {
-    resize: horizontal;
-}
-
-.resize-vertical {
-    resize: vertical;
+    // Resize
+    &.resize-none {
+        resize: none;
+    }
+    
+    &.resize-horizontal {
+        resize: horizontal;
+    }
+    
+    &.resize-vertical {
+        resize: vertical;
+    }
 }
 
 .checkbox {
@@ -138,10 +149,12 @@ p, a, h1, h4, h5, h6 {
 
     transition: all 200ms;
 
-    &:hover {
+    // Pseudo Classes
+    &:hover, &:focus {
         filter: brightness(95%);
     }
 
+    // Element sizes
     &.small {
         height: 2em;
         font-size: 0.75rem;
@@ -349,8 +362,63 @@ p, a, h1, h4, h5, h6 {
 .margin-left-9 { margin-left: 5em; }
 .margin-left-auto { margin-left: auto; }
 
-// Sizes
+// Padding
+.padding-1 { padding: 1em; }
+.padding-2 { padding: 1.5em; }
+.padding-3 { padding: 2em; }
+.padding-4 { padding: 2.5em; }
+.padding-5 { padding: 3em; }
+.padding-6 { padding: 3.5em; }
+.padding-7 { padding: 4em; }
+.padding-8 { padding: 4.5em; }
+.padding-9 { padding: 5em; }
+.padding-auto { padding: auto; }
 
+.padding-top-1 { padding-top: 1em; }
+.padding-top-2 { padding-top: 1.5em; }
+.padding-top-3 { padding-top: 2em; }
+.padding-top-4 { padding-top: 2.5em; }
+.padding-top-5 { padding-top: 3em; }
+.padding-top-6 { padding-top: 3.5em; }
+.padding-top-7 { padding-top: 4em; }
+.padding-top-8 { padding-top: 4.5em; }
+.padding-top-9 { padding-top: 5em; }
+.padding-top-auto { padding-top: auto; }
+
+.padding-right-1 { padding-right: 1em; }
+.padding-right-2 { padding-right: 1.5em; }
+.padding-right-3 { padding-right: 2em; }
+.padding-right-4 { padding-right: 2.5em; }
+.padding-right-5 { padding-right: 3em; }
+.padding-right-6 { padding-right: 3.5em; }
+.padding-right-7 { padding-right: 4em; }
+.padding-right-8 { padding-right: 4.5em; }
+.padding-right-9 { padding-right: 5em; }
+.padding-right-auto { padding-right: auto; }
+
+.padding-bottom-1 { padding-bottom: 1em; }
+.padding-bottom-2 { padding-bottom: 1.5em; }
+.padding-bottom-3 { padding-bottom: 2em; }
+.padding-bottom-4 { padding-bottom: 2.5em; }
+.padding-bottom-5 { padding-bottom: 3em; }
+.padding-bottom-6 { padding-bottom: 3.5em; }
+.padding-bottom-7 { padding-bottom: 4em; }
+.padding-bottom-8 { padding-bottom: 4.5em; }
+.padding-bottom-9 { padding-bottom: 5em; }
+.padding-bottom-auto { padding-bottom: auto; }
+
+.padding-left-1 { padding-left: 1em; }
+.padding-left-2 { padding-left: 1.5em; }
+.padding-left-3 { padding-left: 2em; }
+.padding-left-4 { padding-left: 2.5em; }
+.padding-left-5 { padding-left: 3em; }
+.padding-left-6 { padding-left: 3.5em; }
+.padding-left-7 { padding-left: 4em; }
+.padding-left-8 { padding-left: 4.5em; }
+.padding-left-9 { padding-left: 5em; }
+.padding-left-auto { padding-left: auto; }
+
+// Sizes
 .width-full { width: 100%; }
 .width-half { width: 50%; }
 .width-1-quarter { width: 25%; }
@@ -381,10 +449,11 @@ p, a, h1, h4, h5, h6 {
 .min-height-7 { min-height: 32em; }
 
 // Border-Radius
-
+.border-radius-none { border-radius: $border-radius-none; }
 .border-radius-1 { border-radius: $border-radius-level-1; }
 .border-radius-2 { border-radius: $border-radius-level-2; }
 .border-radius-3 { border-radius: $border-radius-level-3; }
 .border-radius-4 { border-radius: $border-radius-level-4; }
 .border-radius-5 { border-radius: $border-radius-level-5; }
 .border-radius-6 { border-radius: $border-radius-level-6; }
+
