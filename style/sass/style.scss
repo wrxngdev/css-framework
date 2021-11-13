@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
 // Fonts
-$font: Arial, Helvetica, sans-serif;
+$font: 'Quicksand', sans-serif; //Arial, Helvetica, sans-serif;
 
 // Colors
 $primary: hsl(171, 100%, 41%);
@@ -39,6 +41,16 @@ $border-radius-level-6: 100%;
 
 body {
     font-family: $font;
+}
+
+// Sections
+
+.section {
+
+    // Sizes
+    &.full {
+        min-height: 100vh;
+    }
 }
 
 // Text
@@ -366,6 +378,30 @@ p, a, h1, h4, h5, h6 {
     
         &.black {
             background-color: $black;
+        }
+    }
+}
+
+// Table
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td, th {
+        padding: 1em
+    }
+
+    th {
+        text-align: left;
+        background-color: $primary;
+        color: $white;
+    }
+
+    tr {
+        background-color: $white;
+        &:nth-child(even) {
+            background-color: $white-ter;
         }
     }
 }

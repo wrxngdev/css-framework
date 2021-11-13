@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,7 +9,11 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.section.full {
+  min-height: 100vh;
 }
 
 p, a, h1, h4, h5, h6 {
@@ -126,25 +131,25 @@ p, a, h1, h4, h5, h6 {
   padding-left: 0.75em;
   color: #7a7a7a;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-transition: 50ms all;
   transition: 50ms all;
 }
 
 .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .input:-ms-input-placeholder, .textarea:-ms-input-placeholder {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .input::-ms-input-placeholder, .textarea::-ms-input-placeholder {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .input::placeholder, .textarea::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .input:hover, .textarea:hover {
@@ -339,6 +344,29 @@ p, a, h1, h4, h5, h6 {
 
 .progress .bar.black {
   background-color: #0a0a0a;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  padding: 1em;
+}
+
+.table th {
+  text-align: left;
+  background-color: #00d1b2;
+  color: white;
+}
+
+.table tr {
+  background-color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: whitesmoke;
 }
 
 .size-1 {
