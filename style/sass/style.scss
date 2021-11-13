@@ -47,16 +47,8 @@ p, a, h1, h4, h5, h6 {
     color: $grey-darker;
 }
 
-// Boxes
-
-.box {
-    width: 100%;
-}
-
 // Article
-
 .article {
-
     h1 {
         font-size: 2rem;
         color: $grey-darker;
@@ -76,15 +68,11 @@ p, a, h1, h4, h5, h6 {
         font-size: 1rem;
         color: $grey-darker;
     }
-
-    ol {
-        list-style-type: disc;
-    }
 }
 
 // Badges
-
 .badge {
+    width: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
