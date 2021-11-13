@@ -335,6 +335,53 @@ p, a, h1, h4, h5, h6 {
     }
 }
 
+// Progress Bars
+
+.progress {
+    width: 100%;
+    height: 1em;
+    background-color: $white-ter;
+    border-radius: $border-radius-level-4;
+    
+    .bar {
+        height: 100%;
+        background-color: $grey;
+        border-radius: $border-radius-level-4;
+
+        &.primary {
+            background-color: $primary;
+        }
+    
+        &.link {
+            background-color: $link;
+        }
+    
+        &.info {
+            background-color: $info;
+        }
+    
+        &.success {
+            background-color: $success;
+        }
+    
+        &.warning {
+            background-color: $warning;
+        }
+    
+        &.danger {
+            background-color: $danger;
+        }
+    
+        &.dark {
+            background-color: $grey-darker;
+        }
+    
+        &.black {
+            background-color: $black;
+        }
+    }
+}
+
 // Font-Size
 .size-1 { font-size: 3rem; }
 .size-2 { font-size: 2.5rem; }
