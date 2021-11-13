@@ -172,13 +172,20 @@ p, a, h1, h4, h5, h6 {
     font-size: 1rem;
     font-family: $font;
 
+    transition: 50ms all;
+
     // Pseudo Classes
     &::placeholder {
         font-family: $font;
     }
 
+    &:hover {
+        border: 2px solid $grey-light;
+    }
+
     &:focus {
-        border: 2px solid $primary;
+        border: 2px solid $grey-light;
+        outline: 2px solid $primary;
     }
 
     // Element sizes

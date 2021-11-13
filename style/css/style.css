@@ -134,6 +134,8 @@ p, a, h1, h4, h5, h6 {
   color: #7a7a7a;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: 50ms all;
+  transition: 50ms all;
 }
 
 .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
@@ -152,8 +154,13 @@ p, a, h1, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.input:hover, .textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+
 .input:focus, .textarea:focus {
-  border: 2px solid #00d1b2;
+  border: 2px solid #b5b5b5;
+  outline: 2px solid #00d1b2;
 }
 
 .input.small, .textarea.small {
