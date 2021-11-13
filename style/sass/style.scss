@@ -175,6 +175,51 @@ p, a, h1, h4, h5, h6 {
         font-size: 1.25rem;
         border-radius: $border-radius-level-3;
     }
+
+    // Element colors
+
+    &.primary {
+        background-color: $primary;
+    }
+
+    &.link {
+        background-color: $link;
+    }
+
+    &.info {
+        background-color: $info;
+    }
+
+    &.success {
+        background-color: $success;
+    }
+
+    &.warning {
+        background-color: $warning;
+        color: $grey-dark;
+    }
+
+    &.danger {
+        background-color: $danger;
+    }
+
+    &.white {
+        background-color: $white;
+        color: $black;
+    }
+
+    &.light {
+        background-color: $white-ter;
+        color: $grey-dark;
+    }
+
+    &.dark {
+        background-color: $grey-darker;
+    }
+
+    &.black {
+        background-color: $black;
+    }
 }
 
 // Font-Size

@@ -149,6 +149,49 @@ p, a, h1, h4, h5, h6 {
   border-radius: 14px;
 }
 
+.button.primary {
+  background-color: #00d1b2;
+}
+
+.button.link {
+  background-color: #3273dc;
+}
+
+.button.info {
+  background-color: #209cee;
+}
+
+.button.success {
+  background-color: #48c774;
+}
+
+.button.warning {
+  background-color: #ffdd57;
+  color: #4a4a4a;
+}
+
+.button.danger {
+  background-color: #ff3860;
+}
+
+.button.white {
+  background-color: white;
+  color: #0a0a0a;
+}
+
+.button.light {
+  background-color: whitesmoke;
+  color: #4a4a4a;
+}
+
+.button.dark {
+  background-color: #363636;
+}
+
+.button.black {
+  background-color: #0a0a0a;
+}
+
 .size-1 {
   font-size: 3rem;
 }
