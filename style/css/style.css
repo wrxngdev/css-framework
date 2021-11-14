@@ -58,6 +58,7 @@ a.hover-button:hover {
 }
 
 .header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,6 +197,7 @@ a.hover-button:hover {
   color: #7a7a7a;
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   -webkit-transition: 50ms all;
   transition: 50ms all;
 }
@@ -438,6 +440,7 @@ a.hover-button:hover {
   background-color: whitesmoke;
   padding: 1.5em;
   border-radius: 8px;
+  font-weight: 500;
 }
 
 .notification.primary {
@@ -1853,4 +1856,8 @@ a.hover-button:hover {
 
 .z-index-9 {
   z-index: 8;
+}
+
+.fixed {
+  position: fixed;
 }
