@@ -309,7 +309,7 @@ p, a, h1, h4, h5, h6 {
 
     &.warning {
         background-color: $warning;
-        color: $grey-dark;
+        color: $grey-darker;
     }
 
     &.danger {
@@ -348,6 +348,7 @@ p, a, h1, h4, h5, h6 {
         background-color: $grey;
         border-radius: $border-radius-level-4;
 
+        // Element colors
         &.primary {
             background-color: $primary;
         }
@@ -403,6 +404,45 @@ p, a, h1, h4, h5, h6 {
         &:nth-child(even) {
             background-color: $white-ter;
         }
+    }
+}
+
+// Notifications
+
+.notification {
+    width: 32em;
+    background-color: $white-ter;
+    padding: 1.5em;
+    border-radius: $border-radius-level-2;
+
+    // Element colors
+    &.primary {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &.link {
+        background-color: $link;
+        color: $white;
+    }
+
+    &.info {
+        background-color: $info;
+        color: $white;
+    }
+
+    &.success {
+        background-color: $success;
+        color: $white;
+    }
+
+    &.warning {
+        background-color: $warning;
+    }
+
+    &.danger {
+        background-color: $danger;
+        color: $white;
     }
 }
 

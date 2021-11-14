@@ -11,79 +11,88 @@
 </head>
 
 <body>
-    <div class="container flex flex-justify-center flex-align-center flex-column w-full h-full">
-        <h1 class="size-2 w-semi-bold">Text</h1>
-        <div
-            class="container bg-color-white-ter m-1 h-1 w-7 border-radius-1 align-center flex flex-align-center flex-justify-center">
-            <p>This text is in <strong>bold</strong>.</p>
-            <span class="badge info">NEW</span>
+    <section class="section full">
+        <div class="container flex flex-justify-center flex-align-center flex-column w-full h-full">
+            <h1 class="size-2 w-semi-bold">Text</h1>
+            <div class="container bg-color-white-ter m-1 h-1 w-7 border-radius-1 align-center flex flex-align-center flex-justify-center">
+                <p>This text is in <strong>bold</strong>.</p>
+                <span class="badge info">NEW</span>
+            </div>
+            <div class="notification danger">There was an error.</div>
+            <form method="post" class="m-1 w-7">
+                <input type="text" placeholder="Normal Input" class="input mb-1">
+                <textarea placeholder="Normal Textarea" class="textarea mb-1 resize-vertical"></textarea>
+                <button class="button mb-1">Normal Button</button>
+            </form>
+            <div class="progress w-6">
+                <div class="bar danger" style="width: 40%;"></div>
+                <p class="align-center">40%</p>
+            </div>
         </div>
-        <form method="post" class="m-1 w-7">
-            <input type="text" placeholder="Normal Input" class="input mb-1">
-            <textarea placeholder="Normal Textarea" class="textarea mb-1 resize-vertical"></textarea>
-            <button class="button mb-1">Normal Button</button>
-        </form>
-        <div class="progress w-6">
-            <div class="bar danger" style="width: 40%;"></div>
+    </section>
+    <section class="section full">
+        <div class="container flex flex-justify-center flex-align-center flex-column">
+            <h1 class="size-2 w-semi-bold">Table</h1>
+            <p class="size-4 pb-1">I hope, this looks clean.</p>
+            <table class="table w-3-quarter">
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Berglunds snabbköp</td>
+                    <td>Christina Berglund</td>
+                    <td>Sweden</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Königlich Essen</td>
+                    <td>Philip Cramer</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+                <tr>
+                    <td>North/South</td>
+                    <td>Simon Crowther</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Paris spécialités</td>
+                    <td>Marie Bertrand</td>
+                    <td>France</td>
+                </tr>
+            </table>
         </div>
-    </div>
-    <table class="table">
-        <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-        </tr>
-        <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-        <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-        </tr>
-        <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-        </tr>
-        <tr>
-            <td>Königlich Essen</td>
-            <td>Philip Cramer</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Laughing Bacchus Winecellars</td>
-            <td>Yoshi Tannamuri</td>
-            <td>Canada</td>
-        </tr>
-        <tr>
-            <td>Magazzini Alimentari Riuniti</td>
-            <td>Giovanni Rovelli</td>
-            <td>Italy</td>
-        </tr>
-        <tr>
-            <td>North/South</td>
-            <td>Simon Crowther</td>
-            <td>UK</td>
-        </tr>
-        <tr>
-            <td>Paris spécialités</td>
-            <td>Marie Bertrand</td>
-            <td>France</td>
-        </tr>
-    </table>
+    </section>
 </body>
 
 </html>

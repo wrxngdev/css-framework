@@ -276,7 +276,7 @@ p, a, h1, h4, h5, h6 {
 
 .button.warning {
   background-color: #ffdd57;
-  color: #4a4a4a;
+  color: #363636;
 }
 
 .button.danger {
@@ -367,6 +367,42 @@ p, a, h1, h4, h5, h6 {
 
 .table tr:nth-child(even) {
   background-color: whitesmoke;
+}
+
+.notification {
+  width: 32em;
+  background-color: whitesmoke;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+.notification.primary {
+  background-color: #00d1b2;
+  color: white;
+}
+
+.notification.link {
+  background-color: #3273dc;
+  color: white;
+}
+
+.notification.info {
+  background-color: #209cee;
+  color: white;
+}
+
+.notification.success {
+  background-color: #48c774;
+  color: white;
+}
+
+.notification.warning {
+  background-color: #ffdd57;
+}
+
+.notification.danger {
+  background-color: #ff3860;
+  color: white;
 }
 
 .size-1 {
