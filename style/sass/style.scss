@@ -39,6 +39,10 @@ $border-radius-level-6: 100%;
     left: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font;
 }
@@ -57,6 +61,24 @@ body {
 p, a, h1, h4, h5, h6 {
     font-size: 1rem;
     color: $grey-darker;
+}
+
+// Anchor
+
+a {
+    text-decoration: none;
+
+    &.hover-underline {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &.hover-button {
+        &:hover {
+            background-color: $white-ter;
+        }
+    }
 }
 
 // Article
@@ -79,6 +101,57 @@ p, a, h1, h4, h5, h6 {
     h4 {
         font-size: 1rem;
         color: $grey-darker;
+    }
+}
+
+// Header
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 4.5em;
+
+    p {
+        &.logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    img {
+        &.logo {
+            height: 1.5em;
+        }
+    }
+
+    nav {
+
+        ul, ol {
+            list-style-type: none;
+            float: right;
+
+            li {
+                float: left;
+                margin: 0 0.25em;
+                
+                a {
+                    padding: 0.75em 1em;
+                    border-radius: $border-radius-level-2;
+                    font-weight: 500;
+
+                    &:hover:not(.button) {
+                        background-color: $white-ter;
+                    }
+
+                    &.button {
+                        &:hover, &:focus {
+                            filter: brightness(95%);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -185,7 +258,7 @@ p, a, h1, h4, h5, h6 {
 
     &:focus {
         border: 2px solid $grey-light;
-        outline: 2px solid $primary;
+        outline: 1px solid $primary;
     }
 
     // Element sizes
@@ -475,6 +548,10 @@ p, a, h1, h4, h5, h6 {
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 
+// Float
+.float-left { float: left; }
+.float-right { float: right; }
+
 // Text-Colors
 .color-primary { color: $primary; }
 .color-link { color: $link; }
@@ -512,6 +589,20 @@ p, a, h1, h4, h5, h6 {
 .bg-color-grey-darker { background-color: $grey-darker; }
 .bg-color-black-ter { background-color: $black-ter; }
 .bg-color-black { background-color: $black; }
+
+// Lists
+.list {
+    &.type-none { list-style-type: none; }
+    &.type-circle { list-style-type: circle; }
+    &.type-disc { list-style-type: disc; }
+    &.type-square { list-style-type: square; }
+    &.type-decimal { list-style-type: decimal; }
+    &.type-lower-roman { list-style-type: lower-roman; }
+    &.type-upper-roman { list-style-type: upper-roman; }
+    &.type-lower-greek { list-style-type: lower-greek; }
+    &.type-lower-alpha { list-style-type: lower-alpha; }
+    &.type-upper-latin { list-style-type: upper-latin; }
+}
 
 // Flexbox
 .flex-row { flex-direction: row; }
@@ -639,6 +730,30 @@ p, a, h1, h4, h5, h6 {
 .ml-9 { margin-left: 5em; }
 .ml-auto { margin-left: auto; }
 
+.mh-0 { margin-left: 0em; margin-right: 0em; }
+.mh-1 { margin-left: 1em; margin-right: 1em; }
+.mh-2 { margin-left: 1.5em; margin-right: 1.5em; }
+.mh-3 { margin-left: 2em; margin-right: 2em; }
+.mh-4 { margin-left: 2.5em; margin-right: 2.5em; }
+.mh-5 { margin-left: 3em; margin-right: 3em; }
+.mh-6 { margin-left: 3.5em; margin-right: 3.5em; }
+.mh-7 { margin-left: 4em; margin-right: 4em; }
+.mh-8 { margin-left: 4.5em; margin-right: 4.5em; }
+.mh-9 { margin-left: 5em; margin-right: 5em; }
+.mh-auto { margin-left: auto; margin-right: auto; }
+
+.mv-0 { margin-top: 0em; margin-bottom: 0em; }
+.mv-1 { margin-top: 1em; margin-bottom: 1em; }
+.mv-2 { margin-top: 1.5em; margin-bottom: 1.5em; }
+.mv-3 { margin-top: 2em; margin-bottom: 2em; }
+.mv-4 { margin-top: 2.5em; margin-bottom: 2.5em; }
+.mv-5 { margin-top: 3em; margin-bottom: 3em; }
+.mv-6 { margin-top: 3.5em; margin-bottom: 3.5em; }
+.mv-7 { margin-top: 4em; margin-bottom: 4em; }
+.mv-8 { margin-top: 4.5em; margin-bottom: 4.5em; }
+.mv-9 { margin-top: 5em; margin-bottom: 5em; }
+.mv-auto { margin-top: auto; margin-bottom: auto; }
+
 // Padding
 .p-0 { padding: 0; }
 .p-1 { padding: 1em; }
@@ -699,6 +814,30 @@ p, a, h1, h4, h5, h6 {
 .pl-8 { padding-left: 4.5em; }
 .pl-9 { padding-left: 5em; }
 .pl-auto { padding-left: auto; }
+
+.ph-0 { padding-left: 0em; padding-right: 0em; }
+.ph-1 { padding-left: 1em; padding-right: 1em; }
+.ph-2 { padding-left: 1.5em; padding-right: 1.5em; }
+.ph-3 { padding-left: 2em; padding-right: 2em; }
+.ph-4 { padding-left: 2.5em; padding-right: 2.5em; }
+.ph-5 { padding-left: 3em; padding-right: 3em; }
+.ph-6 { padding-left: 3.5em; padding-right: 3.5em; }
+.ph-7 { padding-left: 4em; padding-right: 4em; }
+.ph-8 { padding-left: 4.5em; padding-right: 4.5em; }
+.ph-9 { padding-left: 5em; padding-right: 5em; }
+.ph-auto { padding-left: auto; padding-right: auto; }
+
+.pv-0 { padding-top: 0em; padding-bottom: 0em; }
+.pv-1 { padding-top: 1em; padding-bottom: 1em; }
+.pv-2 { padding-top: 1.5em; padding-bottom: 1.5em; }
+.pv-3 { padding-top: 2em; padding-bottom: 2em; }
+.pv-4 { padding-top: 2.5em; padding-bottom: 2.5em; }
+.pv-5 { padding-top: 3em; padding-bottom: 3em; }
+.pv-6 { padding-top: 3.5em; padding-bottom: 3.5em; }
+.pv-7 { padding-top: 4em; padding-bottom: 4em; }
+.pv-8 { padding-top: 4.5em; padding-bottom: 4.5em; }
+.pv-9 { padding-top: 5em; padding-bottom: 5em; }
+.pv-auto { padding-top: auto; padding-bottom: auto; }
 
 // Sizes
 .w-full { width: 100%; }

@@ -11,10 +11,22 @@
 </head>
 
 <body>
-    <section class="section full">
+    <header class="header">
+        <p class="logo">Framework</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#table">Showcase</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="https://github.com/teraprath/css-framework" target="_blank" class="button">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section full" id="home">
         <div class="container flex flex-justify-center flex-align-center flex-column w-full h-full">
             <h1 class="size-2 w-semi-bold">Text</h1>
-            <div class="container bg-color-white-ter m-1 h-1 w-7 border-radius-1 align-center flex flex-align-center flex-justify-center">
+            <div
+                class="container bg-color-white-ter m-1 h-1 w-7 border-radius-1 align-center flex flex-align-center flex-justify-center">
                 <p>This text is in <strong>bold</strong>.</p>
                 <span class="badge info">NEW</span>
             </div>
@@ -30,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section class="section full">
+    <section class="section full" id="table">
         <div class="container flex flex-justify-center flex-align-center flex-column">
             <h1 class="size-2 w-semi-bold">Table</h1>
             <p class="size-4 pb-1">I hope, this looks clean.</p>
@@ -93,6 +105,12 @@
             </table>
         </div>
     </section>
+    <footer class="bg-color-grey-dark p-3 flex flex-justify-center flex-align-center flex-column">
+        <p class="color-white">Designed by <a href="https://github.com/teraprath" targGitHubet="_blank"
+                class="color-white w-semi-bold">@teraprath</a></p>
+        <p class="color-white">View this project on <a href="https://github.com/teraprath/css-framework" target="_blank"
+                class="color-white w-semi-bold">GitHub</a></p>
+    </footer>
 </body>
 
 </html>
