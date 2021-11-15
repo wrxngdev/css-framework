@@ -12,115 +12,31 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
+    <header class="header sticky bg-color-white">
+        <a href="#" class="logo">
             <img src="assets/img/Logo.svg" alt="Logo">
             <p>MeetCVO</p>
-        </div>
+        </a>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#table">Showcase</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="https://github.com/teraprath/css-framework" target="_blank" class="button">GitHub</a></li>
+                <li><a href="#" class="button light">Login</a></li>
+                <li><a href="#" class="button">Register</a></li>
             </ul>
         </nav>
     </header>
-    <section class="section full" id="home">
-        <div class="container flex flex-justify-center flex-align-center flex-column w-full h-full">
-            <h1 class="size-2 w-semi-bold">Text</h1>
-            <div
-                class="container bg-color-white-ter m-1 h-1 w-7 border-radius-1 align-center flex flex-align-center flex-justify-center">
-                <p>This text is in <strong>bold</strong>.</p>
-                <span class="badge info">NEW</span>
-            </div>
-            <div class="notification danger">There was an error.</div>
-            <form method="post" class="m-1 w-7">
-                <input type="text" placeholder="Normal Input" class="input mb-1">
-                <textarea placeholder="Normal Textarea" class="textarea mb-1 resize-vertical"></textarea>
-                <button class="button mb-1">Normal Button</button>
-            </form>
-            <div class="progress w-6">
-                <div class="bar danger" style="width: 40%;"></div>
-                <p class="align-center">40%</p>
-            </div>
-        </div>
-    </section>
-    <section class="section full" id="table">
-        <div class="container flex flex-justify-center flex-align-center flex-column">
-            <h1 class="size-2 w-semi-bold pt-1">Table</h1>
-            <p class="size-4 pb-1">I hope, this looks clean.</p>
-            <table class="table w-3-quarter">
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Berglunds snabbköp</td>
-                    <td>Christina Berglund</td>
-                    <td>Sweden</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Königlich Essen</td>
-                    <td>Philip Cramer</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-            </table>
-        </div>
-    </section>
     <section class="section full">
-        <div class="article p-9">
-            <h1>This is an article.</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            <ul>
-                <li>At vero eos et accusam et justo duo dolores.</li>
-                <li>Duis autem vel eum iriure dolor.</li>
-                <li>Nam liber tempor cum soluta nobis.</li>
-            </ul>
-            <p>Stet clita kasd gubergren, no sea takimata <a href="#">sanctus</a> est Lorem ipsum dolor sit amet.</p>
-            <img src="http://placehold.it/1280x720" alt="image">
-            <p class="image">This is a picture.</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <div class="container h-full flex flex-justify-center flex-align-center flex-column">
+            <h1 class="size-1">Soziales Netzwerk</h1>
+            <h2 class="size-4">Exklusiv für Schüler der CvO GyO</h2>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute left-0 bottom-0">
+            <path fill="#00d1b2" fill-opacity="1"
+                d="M0,160L60,170.7C120,181,240,203,360,213.3C480,224,600,224,720,213.3C840,203,960,181,1080,170.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+            </path>
+        </svg>
     </section>
-    <footer class="bg-color-grey-dark p-3 flex flex-justify-center flex-align-center flex-column">
-        <p class="color-white">Designed by <a href="https://github.com/teraprath" targGitHubet="_blank"
-                class="color-white w-semi-bold hover-underline">@teraprath</a></p>
-        <p class="color-white">View this project on <a href="https://github.com/teraprath/css-framework" target="_blank"
-                class="color-white w-semi-bold hover-underline">GitHub</a></p>
+    <footer class="bg-color-primary pb-4 flex flex-justify-center flex-align-center flex-column">
+        <p class="color-white w-semi-bold">MeetCVO &copy; 2021-2023</p>
     </footer>
 </body>
 

@@ -4,8 +4,6 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  top: 0;
-  left: 0;
 }
 
 html {
@@ -20,7 +18,7 @@ body {
   min-height: 100vh;
 }
 
-p, a, li, h1, h4, h5, h6 {
+p, a, li, h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   color: #363636;
 }
@@ -95,6 +93,11 @@ a.hover-button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5em 4.5em;
+}
+
+.header.sticky {
+  position: fixed;
+  z-index: 100;
 }
 
 .header .logo {
@@ -1922,6 +1925,22 @@ a.hover-button:hover {
 
 .absolute {
   position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 .cursor-default {
