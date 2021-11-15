@@ -12,7 +12,7 @@ $warning: hsl(48, 100%, 67%);
 $danger: hsl(348, 100%, 61%);
 
 $white: hsl(0, 0%, 100%);
-$white-ter: hsl(0, 0%, 96%);
+$white-ter: hsl(0, 0%, 94%);
 $grey-lighter: hsl(0, 0%, 86%);
 $grey-light: hsl(0, 0%, 71%);
 $grey: hsl(0, 0%, 48%);
@@ -139,26 +139,28 @@ a {
     padding: 1.5em 4.5em;
 
     .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         cursor: pointer;
+        filter: invert(11%) sepia(6%) saturate(32%) hue-rotate(355deg) brightness(98%) contrast(92%);
+        user-select: none;
 
         transition: all 200ms;
 
         &:hover {
             opacity: 0.8;
         }
-    }
 
-    p {
-        &.logo {
+        img {
+            height: 3em;
+            margin-right: 0.5em;
+        }
+
+        p {
             font-size: 1.5rem;
             font-weight: 700;
-            text-transform: uppercase;
-        }
-    }
-
-    img {
-        &.logo {
-            height: 1.5em;
+            text-transform: uppercase; 
         }
     }
 
@@ -323,7 +325,7 @@ a {
 .textarea {
     min-height: 4em;
     height: 12em;
-    padding-top: 1em;
+    padding-top: 1.2em;
     resize: vertical;
     font-size: 1rem;
 

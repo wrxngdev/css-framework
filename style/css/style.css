@@ -34,7 +34,7 @@ a.hover-underline:hover {
 }
 
 a.hover-button:hover {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
 }
 
 .article {
@@ -98,7 +98,23 @@ a.hover-button:hover {
 }
 
 .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+  -webkit-filter: invert(11%) sepia(6%) saturate(32%) hue-rotate(355deg) brightness(98%) contrast(92%);
+          filter: invert(11%) sepia(6%) saturate(32%) hue-rotate(355deg) brightness(98%) contrast(92%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
@@ -107,14 +123,15 @@ a.hover-button:hover {
   opacity: 0.8;
 }
 
-.header p.logo {
+.header .logo img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.header .logo p {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.header img.logo {
-  height: 1.5em;
 }
 
 .header nav ul, .header nav ol {
@@ -134,7 +151,7 @@ a.hover-button:hover {
 }
 
 .header nav ul li a:hover:not(.button), .header nav ol li a:hover:not(.button) {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   color: #00d1b2;
 }
 
@@ -154,7 +171,7 @@ a.hover-button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   padding: 0.5em 0.75em;
   font-size: 0.75rem;
   color: #363636;
@@ -185,7 +202,7 @@ a.hover-button:hover {
 }
 
 .badge.light {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   color: #363636;
 }
 
@@ -285,7 +302,7 @@ a.hover-button:hover {
 .textarea {
   min-height: 4em;
   height: 12em;
-  padding-top: 1em;
+  padding-top: 1.2em;
   resize: vertical;
   font-size: 1rem;
 }
@@ -392,7 +409,7 @@ a.hover-button:hover {
 }
 
 .button.light {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   color: #4a4a4a;
 }
 
@@ -407,7 +424,7 @@ a.hover-button:hover {
 .progress {
   width: 100%;
   height: 1em;
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   border-radius: 16px;
 }
 
@@ -469,12 +486,12 @@ a.hover-button:hover {
 }
 
 .table tr:nth-child(even) {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
 }
 
 .notification {
   width: 32em;
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   padding: 1.5em;
   border-radius: 8px;
   font-weight: 500;
@@ -630,7 +647,7 @@ a.hover-button:hover {
 }
 
 .color-white-ter {
-  color: whitesmoke;
+  color: #f0f0f0;
 }
 
 .color-grey-lighter {
@@ -698,7 +715,7 @@ a.hover-button:hover {
 }
 
 .bg-color-white-ter {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
 }
 
 .bg-color-grey-lighter {
