@@ -197,12 +197,17 @@ a {
         }
     }
 
-    .menu {
+    .mobile {
         display: none;
+        transition: all 300ms;
 
         &:hover {
-            opacity: 0.8;
+            opacity: 0.6;
         }
+    }
+
+    .mobile-menu {
+        display: none;
     }
 }
 
@@ -1019,7 +1024,7 @@ a {
             display: none;
         }
 
-        .menu {
+        .mobile {
             display: block;
         }
     }
