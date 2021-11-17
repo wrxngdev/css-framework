@@ -196,6 +196,14 @@ a {
             }
         }
     }
+
+    .menu {
+        display: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
 
 // Badges
@@ -978,3 +986,42 @@ a {
 .cursor-zoom-out { cursor: zoom-out; }
 .cursor-grab { cursor: grab; }
 .cursor-grabbing { cursor: grabbing; }
+
+// Responsive
+@media screen and (max-width: 800px) {
+    
+    // Width
+    .w-7 { width: 26em; }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+    // Width
+    .w-5 { width: 20em; }
+    .w-6 { width: 20em; }
+    .w-7 { width: 20em; }
+
+    // Font sizes
+    .size-1 { font-size: 2.75rem; }
+    .size-2 { font-size: 2.25rem; }
+    .size-3 { font-size: 1.75rem; }
+    .size-4 { font-size: 1.25rem; }
+    .size-5 { font-size: 1rem; }
+    .size-6 { font-size: 0.75rem; }
+    .size-7 { font-size: 0.5rem; }
+
+    // Header
+    .header {
+        padding: 1.5em 2em;
+
+        nav {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+    }
+
+}

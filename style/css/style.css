@@ -163,6 +163,14 @@ a.hover-button:hover {
           filter: brightness(95%);
 }
 
+.header .menu {
+  display: none;
+}
+
+.header .menu:hover {
+  opacity: 0.8;
+}
+
 .badge {
   width: 4em;
   display: -webkit-box;
@@ -2085,4 +2093,52 @@ a.hover-button:hover {
 .cursor-grabbing {
   cursor: -webkit-grabbing;
   cursor: grabbing;
+}
+
+@media screen and (max-width: 800px) {
+  .w-7 {
+    width: 26em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .w-5 {
+    width: 20em;
+  }
+  .w-6 {
+    width: 20em;
+  }
+  .w-7 {
+    width: 20em;
+  }
+  .size-1 {
+    font-size: 2.75rem;
+  }
+  .size-2 {
+    font-size: 2.25rem;
+  }
+  .size-3 {
+    font-size: 1.75rem;
+  }
+  .size-4 {
+    font-size: 1.25rem;
+  }
+  .size-5 {
+    font-size: 1rem;
+  }
+  .size-6 {
+    font-size: 0.75rem;
+  }
+  .size-7 {
+    font-size: 0.5rem;
+  }
+  .header {
+    padding: 1.5em 2em;
+  }
+  .header nav {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+  }
 }
