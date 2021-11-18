@@ -1,3 +1,11 @@
+var isOpen = false;
+
 $(".mobile").click(function() {
-    $(".mobile-menu").show();
+    if(!isOpen) {
+        $(".mobile-menu").show();
+        isOpen = true;
+    } else {
+        $(".mobile-menu").hide();
+        isOpen = false;
+    }
 });
